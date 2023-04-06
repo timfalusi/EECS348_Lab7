@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EECS 348 Lab 7: Practice 4</title>
+        <h1>Practice 4: Multiplication Table</h1>
+    </head>
+    <body>
+        <form method="get" action="multiplicationTable.php">
+            <label for="size">Table size:</label>
+            <input type="size" name="size" id="size" required>
+            <button type="submit">Submit</button>
+        </form>
+        <?php
+            if (isset($_GET["size"])) {
+                include("multiplicationTable.php");
+            }
+        ?>
+    </body>
+</html>
+
